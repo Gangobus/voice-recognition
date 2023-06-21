@@ -1,0 +1,5 @@
+nuitka --standalone --follow-imports --enable-plugin=tk-inter --output-dir=output_folder --run main.py
+
+nuitka --standalone --follow-imports --enable-plugin=tk-inter --plugin-enable=ffmpeg --plugin-enable=sdl2 --output-dir=output_folder --windows-disable-console --run main.py
+
+py -m nuitka --show-scons --show-progress --onefile --remove-output --warn-implicit-exceptions --warn-unusual-code --enable-plugin=tk-inter --windows-disable-console --follow-imports --run main.py
